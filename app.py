@@ -14,6 +14,7 @@ import jwt
 import time
 import networkx as nx
 from pyvis.network import Network
+import matplotlib.pyplot as plt
 
 # Optional parse import retained for compatibility if used in modules
 from dateutil import parser as dateparser
@@ -174,6 +175,25 @@ def save_graph_to_file(graph: nx.Graph, name: str):
     write_json(GRAPHS_FILE, graphs)
     add_log("INFO", f"Graph saved: {name}")
 
+def save_graph_png(graph: nx.Graph, filename: str):
+    png_path = ROOT / "saved_graphs" / f"{filename}.png"
+    png_path.parent.mkdir(exist_ok=True)
+
+    plt.figure(figsize=(12, 8))
+    pos = nx.spring_layout(graph)
+    nx.draw(graph, pos, with_labels=True, node_color="lightblue", edge_color="gray")
+    plt.savefig(png_path, dpi=300, bbox_inches="tight")
+    plt.close()
+    return png_path
+
+def save_pyvis_html(graph: nx.Graph, filename: str):
+    net = Network(height="750px", width="100%", bgcolor="#222222", font_color="white")
+    net.from_nx(graph)
+    html_path = ROOT / "saved_graphs" / f"{filename}.html"
+    html_path.parent.mkdir(exist_ok=True)
+    net.save_graph(str(html_path))
+    return html_path
+
 def load_graph_from_file(name: str):
     graphs = read_json(GRAPHS_FILE) or {}
     if name not in graphs:
@@ -202,7 +222,7 @@ st.markdown("""
 }
 .card {
   background: white;
-  padding: 16px;
+  padding: 12px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(43,58,120,0.04);
 }
@@ -221,6 +241,334 @@ st.markdown("""
 }
 .footer-note {text-align:center;color:gray;padding:12px;}
 </style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600&display=swap');
+    
+    /* Animated gradient background */
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+    
+    @keyframes pulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+    }
+    
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes glow {
+        0%, 100% {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5),
+                        0 0 40px rgba(59, 130, 246, 0.3),
+                        0 0 60px rgba(59, 130, 246, 0.2);
+        }
+        50% {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.8),
+                        0 0 60px rgba(59, 130, 246, 0.5),
+                        0 0 90px rgba(59, 130, 246, 0.3);
+        }
+    }
+    
+    @keyframes particleFloat {
+        0% {
+            transform: translateY(100vh) translateX(0) rotate(0deg);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100vh) translateX(100px) rotate(360deg);
+            opacity: 0;
+        }
+    }
+    
+    /* Particle system */
+    .particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: radial-gradient(circle, rgba(59, 130, 246, 0.8), transparent);
+        border-radius: 50%;
+        animation: particleFloat linear infinite;
+    }
+    
+    .particle:nth-child(1) { left: 10%; animation-duration: 15s; animation-delay: 0s; }
+    .particle:nth-child(2) { left: 20%; animation-duration: 18s; animation-delay: 2s; }
+    .particle:nth-child(3) { left: 30%; animation-duration: 12s; animation-delay: 4s; }
+    .particle:nth-child(4) { left: 40%; animation-duration: 20s; animation-delay: 1s; }
+    .particle:nth-child(5) { left: 50%; animation-duration: 16s; animation-delay: 3s; }
+    .particle:nth-child(6) { left: 60%; animation-duration: 14s; animation-delay: 5s; }
+    .particle:nth-child(7) { left: 70%; animation-duration: 19s; animation-delay: 2.5s; }
+    .particle:nth-child(8) { left: 80%; animation-duration: 13s; animation-delay: 4.5s; }
+    .particle:nth-child(9) { left: 90%; animation-duration: 17s; animation-delay: 1.5s; }
+    .particle:nth-child(10) { left: 15%; animation-duration: 21s; animation-delay: 3.5s; }
+    
+    /* Main app styling */
+    .stApp {
+        background: linear-gradient(-45deg, #0a0a0f, #1a0e2e, #0f0a1f, #1e1430);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    /* Hide Streamlit branding */
+    #MainMenu, footer, header {visibility: hidden;}
+    
+    /* Title styling with enhanced glow */
+    .login-title {
+        font-family: 'Orbitron', monospace;
+        font-size: 3.5rem;
+        font-weight: 900;
+        text-align: center;
+        background: linear-gradient(135deg, #3b82f6 0%, #1e40af 50%, #60a5fa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+        margin-bottom: 1rem;
+        animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    /* Subtitle with animation */
+    .login-subtitle {
+        text-align: center;
+        color: #000000;
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+        animation: slideIn 1s ease-out 0.3s both;
+        position: relative;
+        z-index: 2;
+    }
+    
+    /* Tab styling with glassmorphism */
+    .stTabs {
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(20px);
+        border-radius: 25px;
+        padding: 2rem;
+        border: 1px solid rgba(59, 130, 246, 0.3);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        animation: slideIn 1s ease-out 0.5s both;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 1rem;
+        background: rgba(59, 130, 246, 0.1);
+        border-radius: 15px;
+        padding: 0.5rem;
+        border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+    
+    .stTabs [data-baseweb="tab"] {
+        background: transparent;
+        border-radius: 12px;
+        color: #000000;
+        font-weight: 600;
+        padding: 0.75rem 2rem;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+    }
+    
+    .stTabs [data-baseweb="tab"]:hover {
+        background: rgba(59, 130, 246, 0.2);
+        color: #fff;
+        transform: translateY(-2px);
+    }
+    
+    .stTabs [aria-selected="true"] {
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.4), rgba(30, 64, 175, 0.4));
+        color: black !important;
+        border: 1px solid rgba(59, 130, 246, 0.5);
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    }
+    
+    /* Form styling */
+    .stTextInput > div > div > input {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(59, 130, 246, 0.3) !important;
+        border-radius: 12px !important;
+        color: black !important;
+        padding: 0.75rem 1rem !important;
+        font-size: 1rem !important;
+        transition: all 0.3s ease !important;
+        backdrop-filter: blur(10px);
+    }
+    
+    .stTextInput > div > div > input:focus {
+        border: 1px solid rgba(59, 130, 246, 0.8) !important;
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.4) !important;
+        background: rgba(255, 255, 255, 0.08) !important;
+        transform: scale(1.02);
+    }
+    
+    .stTextInput > label {
+        color: #00000 !important;
+        font-weight: 500 !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    /* Button styling with enhanced effects */
+    .stButton > button {
+        background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%) !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 12px !important;
+        padding: 0.75rem 2rem !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        letter-spacing: 1px !important;
+        transition: all 0.3s ease !important;
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4) !important;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .stButton > button:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.5s;
+    }
+    
+    .stButton > button:hover:before {
+        left: 100%;
+    }
+    
+    .stButton > button:hover {
+        transform: translateY(-3px) !important;
+        box-shadow: 0 6px 25px rgba(59, 130, 246, 0.6) !important;
+    }
+    
+    .stButton > button:active {
+        transform: translateY(-1px) !important;
+    }
+    
+    /* Form submit button */
+    .stForm button[kind="primary"] {
+        background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%) !important;
+    }
+    
+    /* Subheader styling */
+    .stMarkdown h3 {
+        color: black !important;
+        font-weight: 600 !important;
+        margin-bottom: 1.5rem !important;
+        font-size: 1.5rem !important;
+    }
+    
+    /* Alert boxes */
+    .stAlert {
+        background: rgba(255, 255, 255, 0.05) !important;
+        backdrop-filter: blur(10px) !important;
+        border-radius: 12px !important;
+        border-left: 4px solid !important;
+        animation: slideIn 0.5s ease-out;
+    }
+    
+    /* Success alert */
+    div[data-baseweb="notification"][kind="success"] {
+        background: rgba(16, 185, 129, 0.1) !important;
+        border-left-color: #10b981 !important;
+    }
+    
+    /* Error alert */
+    div[data-baseweb="notification"][kind="error"] {
+        background: rgba(239, 68, 68, 0.1) !important;
+        border-left-color: #ef4444 !important;
+    }
+    
+    /* Warning alert */
+    div[data-baseweb="notification"][kind="warning"] {
+        background: rgba(245, 158, 11, 0.1) !important;
+        border-left-color: #f59e0b !important;
+    }
+    
+    /* Footer text */
+    .footer-text {
+        text-align: center;
+        color: #9ca3af;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+        animation: slideIn 1s ease-out 0.7s both;
+    }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.02);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #3b82f6, #1e40af);
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #1e40af, #3b82f6);
+    }
+</style>
+
+<div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+</div>
 """, unsafe_allow_html=True)
 
 # ---------------------------
@@ -245,23 +593,26 @@ def df_ok(obj):
 # LOGIN UI (fixed: single form, demo button outside)
 # ---------------------------
 def login_page():
-    st.markdown('<div class="main-header">🧠 AI-KnowMap — Interdisciplinary Knowledge Mapper</div>', unsafe_allow_html=True)
-
-    col1, col2, col3 = st.columns([1,2,1])
+    # Apply the mesmerizing style first (make sure to call the style function before this)
+    
+    # Title with subtitle
+    st.markdown('<h1 class="login-title">🧠 AI-KnowMap</h1>', unsafe_allow_html=True)
+    st.markdown('<p class="login-subtitle">INTERDISCIPLINARY KNOWLEDGE MAPPER</p>', unsafe_allow_html=True)
+    
+    col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.markdown('<div class="card">', unsafe_allow_html=True)
         tabs = st.tabs(["🔐 Sign In", "📝 Register"])
-
-        # SIGN IN
+        
+        # SIGN IN TAB
         with tabs[0]:
             st.subheader("Welcome back")
             with st.form("login_form"):
                 user = st.text_input("Username or Email", value="")
                 pwd = st.text_input("Password", type="password")
                 submit = st.form_submit_button("Sign In")
-
+            
             demo = st.button("Demo Login")
-
+            
             if submit:
                 if user and pwd:
                     ok, res = authenticate_user_jwt(user, pwd)
@@ -275,7 +626,7 @@ def login_page():
                         st.error(res)
                 else:
                     st.warning("Enter both username and password")
-
+            
             if demo:
                 ok, res = authenticate_user_jwt("demo", "demo123")
                 if ok:
@@ -286,8 +637,8 @@ def login_page():
                     st.rerun()
                 else:
                     st.error("Demo login failed")
-
-        # REGISTER
+        
+        # REGISTER TAB
         with tabs[1]:
             st.subheader("Create account")
             with st.form("reg_form"):
@@ -296,6 +647,7 @@ def login_page():
                 new_pwd = st.text_input("Password", type="password")
                 new_pwd2 = st.text_input("Confirm password", type="password")
                 reg_submit = st.form_submit_button("Register")
+            
             if reg_submit:
                 if not all([new_user, new_name, new_pwd, new_pwd2]):
                     st.warning("Fill all fields")
@@ -307,8 +659,8 @@ def login_page():
                         st.success("Account created. Please sign in.")
                     else:
                         st.error(msg)
-
-        st.markdown('</div>', unsafe_allow_html=True)
+        
+        st.markdown('<p class="footer-text">Powered by AI • Built by TEAM-1</p>', unsafe_allow_html=True)
 
 # If user not logged in, show login page and stop.
 if not st.session_state.jwt_token:
@@ -498,7 +850,7 @@ with tab2:
 
 # Tab 3: NLP Pipeline
 with tab3:
-    st.markdown('<p class="sub-header">🧠 NLP Processing Pipeline</p>', unsafe_allow_html=True)
+    st.markdown('<div class="card"><h3>🧠 NLP Processing Pipeline</h3>', unsafe_allow_html=True)
     
     if st.session_state.data is None:
         st.warning("⚠️ Please upload a dataset first in the Upload Data tab!")
@@ -619,6 +971,21 @@ with tab4:
                     tmpfile = DATA_DIR / "temp_graph.html"
                     net.save_graph(str(tmpfile))
                     st.components.v1.html(tmpfile.read_text(), height=670, scrolling=True)
+
+        if st.session_state.graph is not None:
+            name = st.text_input("Save graph name", value="my_graph")
+
+            if st.button("💾 Save Graph Data"):
+                save_graph_to_file(st.session_state.graph, name)
+                st.success("Graph structure saved!")
+
+            if st.button("📄 Save PyVis (HTML)"):
+                path = save_pyvis_html(st.session_state.graph, name)
+                st.success(f"Saved HTML: {path}")
+
+            if st.button("🖼️ Save as PNG"):
+                path = save_graph_png(st.session_state.graph, name)
+                st.success(f"Saved PNG: {path}")
     st.markdown('</div>', unsafe_allow_html=True)
 
 # ---------------------------

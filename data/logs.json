@@ -513,5 +513,75 @@
     "timestamp": "2025-11-27T13:31:12.188794+00:00",
     "level": "INFO",
     "message": "Graph built with 104 nodes"
+  },
+  {
+    "timestamp": "2025-11-27T15:00:09.387320+00:00",
+    "level": "INFO",
+    "message": "User logged in: demo"
+  },
+  {
+    "timestamp": "2025-11-27T15:02:14.184257+00:00",
+    "level": "INFO",
+    "message": "User logged in: demo"
+  },
+  {
+    "timestamp": "2025-11-27T15:03:29.752147+00:00",
+    "level": "INFO",
+    "message": "Graph built with 101 nodes"
+  },
+  {
+    "timestamp": "2025-11-27T15:06:20.997117+00:00",
+    "level": "INFO",
+    "message": "User logged in: demo"
+  },
+  {
+    "timestamp": "2025-11-27T15:07:17.117104+00:00",
+    "level": "INFO",
+    "message": "User logged in: demo"
+  },
+  {
+    "timestamp": "2025-11-27T15:14:16.754945+00:00",
+    "level": "INFO",
+    "message": "User logged in: meenakshi"
+  },
+  {
+    "timestamp": "2025-11-27T15:15:10.481293+00:00",
+    "level": "INFO",
+    "message": "Graph built with 104 nodes"
+  },
+  {
+    "timestamp": "2025-11-27T15:24:08.320098+00:00",
+    "level": "INFO",
+    "message": "User logged in: demo"
+  },
+  {
+    "timestamp": "2025-11-27T15:24:42.263146+00:00",
+    "level": "INFO",
+    "message": "Graph built with 104 nodes"
+  },
+  {
+    "timestamp": "2025-11-27T15:27:15.504310+00:00",
+    "level": "INFO",
+    "message": "Graph saved: my_graph"
+  },
+  {
+    "timestamp": "2025-11-27T15:28:25.814046+00:00",
+    "level": "INFO",
+    "message": "Graph saved: demo_graph"
+  },
+  {
+    "timestamp": "2025-11-27T15:33:25.368730+00:00",
+    "level": "INFO",
+    "message": "User logged in: meenakshi"
+  },
+  {
+    "timestamp": "2025-11-27T15:34:15.044831+00:00",
+    "level": "INFO",
+    "message": "Graph built with 104 nodes"
+  },
+  {
+    "timestamp": "2025-11-27T15:36:07.853489+00:00",
+    "level": "INFO",
+    "message": "Saved 500 entities"
   }
 ]

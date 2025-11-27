@@ -1,1 +1,2304 @@
-{}
+{
+  "my_graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "id": "Mayer"
+      },
+      {
+        "id": "computing"
+      },
+      {
+        "id": "Apple"
+      },
+      {
+        "id": "Harris"
+      },
+      {
+        "id": "leaders"
+      },
+      {
+        "id": "Institute"
+      },
+      {
+        "id": "discovery"
+      },
+      {
+        "id": "Ronaldo"
+      },
+      {
+        "id": "Wimbledon"
+      },
+      {
+        "id": "Carver"
+      },
+      {
+        "id": "trials"
+      },
+      {
+        "id": "Obama"
+      },
+      {
+        "id": "changes"
+      },
+      {
+        "id": "Merkel"
+      },
+      {
+        "id": "CIMMYT"
+      },
+      {
+        "id": "study"
+      },
+      {
+        "id": "Vinci"
+      },
+      {
+        "id": "symphony"
+      },
+      {
+        "id": "Dhoni"
+      },
+      {
+        "id": "CERN"
+      },
+      {
+        "id": "research"
+      },
+      {
+        "id": "Tesla"
+      },
+      {
+        "id": "office"
+      },
+      {
+        "id": "Pichai"
+      },
+      {
+        "id": "CEO"
+      },
+      {
+        "id": "Ltd"
+      },
+      {
+        "id": "adoption"
+      },
+      {
+        "id": "Researchers"
+      },
+      {
+        "id": "Barcelona"
+      },
+      {
+        "id": "tournament"
+      },
+      {
+        "id": "Gogh"
+      },
+      {
+        "id": "exhibition"
+      },
+      {
+        "id": "Samsung"
+      },
+      {
+        "id": "Intel"
+      },
+      {
+        "id": "robotics"
+      },
+      {
+        "id": "NBA"
+      },
+      {
+        "id": "opener"
+      },
+      {
+        "id": "Swaminathan"
+      },
+      {
+        "id": "Nadella"
+      },
+      {
+        "id": "launch"
+      },
+      {
+        "id": "Maathai"
+      },
+      {
+        "id": "Carson"
+      },
+      {
+        "id": "expedition"
+      },
+      {
+        "id": "point"
+      },
+      {
+        "id": "Picasso"
+      },
+      {
+        "id": "painting"
+      },
+      {
+        "id": "battle"
+      },
+      {
+        "id": "place"
+      },
+      {
+        "id": "uprising"
+      },
+      {
+        "id": "UK"
+      },
+      {
+        "id": "Messi"
+      },
+      {
+        "id": "NASA"
+      },
+      {
+        "id": "Siemens"
+      },
+      {
+        "id": "Industries"
+      },
+      {
+        "id": "House"
+      },
+      {
+        "id": "restoration"
+      },
+      {
+        "id": "Spain"
+      },
+      {
+        "id": "SpaceX"
+      },
+      {
+        "id": "Peru"
+      },
+      {
+        "id": "Williams"
+      },
+      {
+        "id": "Borlaug"
+      },
+      {
+        "id": "Beyonc\u00e9"
+      },
+      {
+        "id": "Nooyi"
+      },
+      {
+        "id": "benefits"
+      },
+      {
+        "id": "match"
+      },
+      {
+        "id": "Einstein"
+      },
+      {
+        "id": "findings"
+      },
+      {
+        "id": "Google"
+      },
+      {
+        "id": "networks"
+      },
+      {
+        "id": "Lovelace"
+      },
+      {
+        "id": "Hopper"
+      },
+      {
+        "id": "Cook"
+      },
+      {
+        "id": "Kenya"
+      },
+      {
+        "id": "Goodall"
+      },
+      {
+        "id": "ICAR"
+      },
+      {
+        "id": "Lee"
+      },
+      {
+        "id": "Franklin"
+      },
+      {
+        "id": "India"
+      },
+      {
+        "id": "sensors"
+      },
+      {
+        "id": "Barra"
+      },
+      {
+        "id": "Curie"
+      },
+      {
+        "id": "University"
+      },
+      {
+        "id": "gene"
+      },
+      {
+        "id": "signing"
+      },
+      {
+        "id": "Sachs"
+      },
+      {
+        "id": "installation"
+      },
+      {
+        "id": "Modi"
+      },
+      {
+        "id": "coronation"
+      },
+      {
+        "id": "Dimon"
+      },
+      {
+        "id": "Newton"
+      },
+      {
+        "id": "Musk"
+      },
+      {
+        "id": "FAO"
+      },
+      {
+        "id": "trial"
+      },
+      {
+        "id": "manufacturing"
+      },
+      {
+        "id": "Australia"
+      },
+      {
+        "id": "Beethoven"
+      },
+      {
+        "id": "USA"
+      },
+      {
+        "id": "Museum"
+      },
+      {
+        "id": "IBM"
+      },
+      {
+        "id": "Academy"
+      },
+      {
+        "id": "opera"
+      },
+      {
+        "id": "Opera"
+      },
+      {
+        "id": "OpenAI"
+      },
+      {
+        "id": "Kahlo"
+      }
+    ],
+    "links": [
+      {
+        "relation": "announce",
+        "source": "Mayer",
+        "target": "computing"
+      },
+      {
+        "relation": "lead",
+        "source": "Mayer",
+        "target": "launch"
+      },
+      {
+        "relation": "announce",
+        "source": "Mayer",
+        "target": "robotics"
+      },
+      {
+        "relation": "release",
+        "source": "Apple",
+        "target": "computing"
+      },
+      {
+        "relation": "release",
+        "source": "Apple",
+        "target": "robotics"
+      },
+      {
+        "relation": "meet",
+        "source": "Harris",
+        "target": "leaders"
+      },
+      {
+        "relation": "announce",
+        "source": "Harris",
+        "target": "changes"
+      },
+      {
+        "relation": "announce",
+        "source": "Institute",
+        "target": "discovery"
+      },
+      {
+        "relation": "introduce",
+        "source": "Institute",
+        "target": "study"
+      },
+      {
+        "relation": "introduce",
+        "source": "Institute",
+        "target": "adoption"
+      },
+      {
+        "relation": "announce",
+        "source": "Institute",
+        "target": "research"
+      },
+      {
+        "relation": "announce",
+        "source": "Institute",
+        "target": "gene"
+      },
+      {
+        "relation": "lead",
+        "source": "Ronaldo",
+        "target": "Wimbledon"
+      },
+      {
+        "relation": "lead",
+        "source": "Ronaldo",
+        "target": "NBA"
+      },
+      {
+        "relation": "lead",
+        "source": "Ronaldo",
+        "target": "India"
+      },
+      {
+        "relation": "announce",
+        "source": "Wimbledon",
+        "target": "opener"
+      },
+      {
+        "relation": "announce",
+        "source": "Wimbledon",
+        "target": "match"
+      },
+      {
+        "relation": "announce",
+        "source": "Wimbledon",
+        "target": "tournament"
+      },
+      {
+        "relation": "lead",
+        "source": "Carver",
+        "target": "trials"
+      },
+      {
+        "relation": "announce",
+        "source": "Obama",
+        "target": "changes"
+      },
+      {
+        "relation": "meet",
+        "source": "Obama",
+        "target": "leaders"
+      },
+      {
+        "relation": "meet",
+        "source": "Merkel",
+        "target": "leaders"
+      },
+      {
+        "relation": "announce",
+        "source": "Merkel",
+        "target": "changes"
+      },
+      {
+        "relation": "introduce",
+        "source": "CIMMYT",
+        "target": "study"
+      },
+      {
+        "relation": "show",
+        "source": "study",
+        "target": "benefits"
+      },
+      {
+        "relation": "premiere",
+        "source": "Vinci",
+        "target": "symphony"
+      },
+      {
+        "relation": "premiere",
+        "source": "Vinci",
+        "target": "exhibition"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Vinci",
+        "target": "painting"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Vinci",
+        "target": "installation"
+      },
+      {
+        "relation": "lead",
+        "source": "Dhoni",
+        "target": "Wimbledon"
+      },
+      {
+        "relation": "lead",
+        "source": "Dhoni",
+        "target": "India"
+      },
+      {
+        "relation": "lead",
+        "source": "Dhoni",
+        "target": "NBA"
+      },
+      {
+        "relation": "announce",
+        "source": "CERN",
+        "target": "research"
+      },
+      {
+        "relation": "announce",
+        "source": "CERN",
+        "target": "discovery"
+      },
+      {
+        "relation": "announce",
+        "source": "CERN",
+        "target": "gene"
+      },
+      {
+        "relation": "announce",
+        "source": "CERN",
+        "target": "study"
+      },
+      {
+        "relation": "open",
+        "source": "Tesla",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Tesla",
+        "target": "Tesla"
+      },
+      {
+        "relation": "acquire",
+        "source": "Tesla",
+        "target": "Samsung"
+      },
+      {
+        "relation": "become",
+        "source": "Pichai",
+        "target": "CEO"
+      },
+      {
+        "relation": "announce",
+        "source": "Pichai",
+        "target": "computing"
+      },
+      {
+        "relation": "lead",
+        "source": "Pichai",
+        "target": "launch"
+      },
+      {
+        "relation": "introduce",
+        "source": "Ltd",
+        "target": "adoption"
+      },
+      {
+        "relation": "report",
+        "source": "Researchers",
+        "target": "discovery"
+      },
+      {
+        "relation": "report",
+        "source": "Researchers",
+        "target": "research"
+      },
+      {
+        "relation": "report",
+        "source": "Researchers",
+        "target": "study"
+      },
+      {
+        "relation": "report",
+        "source": "Researchers",
+        "target": "gene"
+      },
+      {
+        "relation": "announce",
+        "source": "Barcelona",
+        "target": "tournament"
+      },
+      {
+        "relation": "announce",
+        "source": "Barcelona",
+        "target": "match"
+      },
+      {
+        "relation": "premiere",
+        "source": "Gogh",
+        "target": "exhibition"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Gogh",
+        "target": "opera"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Gogh",
+        "target": "installation"
+      },
+      {
+        "relation": "open",
+        "source": "Samsung",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Samsung",
+        "target": "Industries"
+      },
+      {
+        "relation": "acquire",
+        "source": "Samsung",
+        "target": "Tesla"
+      },
+      {
+        "relation": "release",
+        "source": "Intel",
+        "target": "robotics"
+      },
+      {
+        "relation": "announce",
+        "source": "NBA",
+        "target": "opener"
+      },
+      {
+        "relation": "announce",
+        "source": "NBA",
+        "target": "tournament"
+      },
+      {
+        "relation": "announce",
+        "source": "NBA",
+        "target": "match"
+      },
+      {
+        "relation": "lead",
+        "source": "Swaminathan",
+        "target": "trials"
+      },
+      {
+        "relation": "lead",
+        "source": "Nadella",
+        "target": "launch"
+      },
+      {
+        "relation": "lead",
+        "source": "Maathai",
+        "target": "trials"
+      },
+      {
+        "relation": "lead",
+        "source": "Carson",
+        "target": "trials"
+      },
+      {
+        "relation": "mark",
+        "source": "expedition",
+        "target": "point"
+      },
+      {
+        "relation": "take",
+        "source": "expedition",
+        "target": "place"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Picasso",
+        "target": "painting"
+      },
+      {
+        "relation": "premiere",
+        "source": "Picasso",
+        "target": "symphony"
+      },
+      {
+        "relation": "premiere",
+        "source": "Picasso",
+        "target": "installation"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Picasso",
+        "target": "exhibition"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Picasso",
+        "target": "opera"
+      },
+      {
+        "relation": "take",
+        "source": "battle",
+        "target": "place"
+      },
+      {
+        "relation": "mark",
+        "source": "battle",
+        "target": "point"
+      },
+      {
+        "relation": "take",
+        "source": "uprising",
+        "target": "place"
+      },
+      {
+        "relation": "mark",
+        "source": "uprising",
+        "target": "point"
+      },
+      {
+        "relation": "feature",
+        "source": "UK",
+        "target": "Messi"
+      },
+      {
+        "relation": "feature",
+        "source": "UK",
+        "target": "Williams"
+      },
+      {
+        "relation": "feature",
+        "source": "UK",
+        "target": "Dhoni"
+      },
+      {
+        "relation": "lead",
+        "source": "Messi",
+        "target": "NBA"
+      },
+      {
+        "relation": "lead",
+        "source": "Messi",
+        "target": "Wimbledon"
+      },
+      {
+        "relation": "announce",
+        "source": "NASA",
+        "target": "research"
+      },
+      {
+        "relation": "announce",
+        "source": "NASA",
+        "target": "study"
+      },
+      {
+        "relation": "acquire",
+        "source": "Siemens",
+        "target": "Industries"
+      },
+      {
+        "relation": "open",
+        "source": "Siemens",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Siemens",
+        "target": "Samsung"
+      },
+      {
+        "relation": "acquire",
+        "source": "Siemens",
+        "target": "Tesla"
+      },
+      {
+        "relation": "acquire",
+        "source": "Industries",
+        "target": "Industries"
+      },
+      {
+        "relation": "acquire",
+        "source": "Industries",
+        "target": "Sachs"
+      },
+      {
+        "relation": "open",
+        "source": "Industries",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Industries",
+        "target": "Siemens"
+      },
+      {
+        "relation": "announce",
+        "source": "House",
+        "target": "restoration"
+      },
+      {
+        "relation": "feature",
+        "source": "Spain",
+        "target": "Dhoni"
+      },
+      {
+        "relation": "feature",
+        "source": "Spain",
+        "target": "Messi"
+      },
+      {
+        "relation": "feature",
+        "source": "Spain",
+        "target": "Ronaldo"
+      },
+      {
+        "relation": "feature",
+        "source": "Spain",
+        "target": "Williams"
+      },
+      {
+        "relation": "release",
+        "source": "SpaceX",
+        "target": "robotics"
+      },
+      {
+        "relation": "release",
+        "source": "SpaceX",
+        "target": "computing"
+      },
+      {
+        "relation": "adopt",
+        "source": "Peru",
+        "target": "adoption"
+      },
+      {
+        "relation": "lead",
+        "source": "Williams",
+        "target": "Wimbledon"
+      },
+      {
+        "relation": "lead",
+        "source": "Williams",
+        "target": "India"
+      },
+      {
+        "relation": "lead",
+        "source": "Borlaug",
+        "target": "trials"
+      },
+      {
+        "relation": "premiere",
+        "source": "Beyonc\u00e9",
+        "target": "exhibition"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Beyonc\u00e9",
+        "target": "symphony"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Beyonc\u00e9",
+        "target": "installation"
+      },
+      {
+        "relation": "premiere",
+        "source": "Beyonc\u00e9",
+        "target": "painting"
+      },
+      {
+        "relation": "become",
+        "source": "Nooyi",
+        "target": "CEO"
+      },
+      {
+        "relation": "publish",
+        "source": "Einstein",
+        "target": "findings"
+      },
+      {
+        "relation": "release",
+        "source": "Google",
+        "target": "networks"
+      },
+      {
+        "relation": "release",
+        "source": "Google",
+        "target": "sensors"
+      },
+      {
+        "relation": "lead",
+        "source": "Lovelace",
+        "target": "launch"
+      },
+      {
+        "relation": "announce",
+        "source": "Hopper",
+        "target": "networks"
+      },
+      {
+        "relation": "announce",
+        "source": "Hopper",
+        "target": "sensors"
+      },
+      {
+        "relation": "lead",
+        "source": "Hopper",
+        "target": "launch"
+      },
+      {
+        "relation": "become",
+        "source": "Cook",
+        "target": "CEO"
+      },
+      {
+        "relation": "adopt",
+        "source": "Kenya",
+        "target": "study"
+      },
+      {
+        "relation": "adopt",
+        "source": "Kenya",
+        "target": "adoption"
+      },
+      {
+        "relation": "adopt",
+        "source": "Kenya",
+        "target": "trial"
+      },
+      {
+        "relation": "publish",
+        "source": "Goodall",
+        "target": "findings"
+      },
+      {
+        "relation": "introduce",
+        "source": "ICAR",
+        "target": "adoption"
+      },
+      {
+        "relation": "introduce",
+        "source": "ICAR",
+        "target": "trial"
+      },
+      {
+        "relation": "announce",
+        "source": "Lee",
+        "target": "networks"
+      },
+      {
+        "relation": "lead",
+        "source": "Lee",
+        "target": "launch"
+      },
+      {
+        "relation": "publish",
+        "source": "Franklin",
+        "target": "findings"
+      },
+      {
+        "relation": "adopt",
+        "source": "India",
+        "target": "study"
+      },
+      {
+        "relation": "expand",
+        "source": "India",
+        "target": "manufacturing"
+      },
+      {
+        "relation": "announce",
+        "source": "India",
+        "target": "opener"
+      },
+      {
+        "relation": "announce",
+        "source": "India",
+        "target": "tournament"
+      },
+      {
+        "relation": "adopt",
+        "source": "India",
+        "target": "adoption"
+      },
+      {
+        "relation": "become",
+        "source": "Barra",
+        "target": "CEO"
+      },
+      {
+        "relation": "publish",
+        "source": "Curie",
+        "target": "findings"
+      },
+      {
+        "relation": "announce",
+        "source": "University",
+        "target": "gene"
+      },
+      {
+        "relation": "announce",
+        "source": "University",
+        "target": "study"
+      },
+      {
+        "relation": "announce",
+        "source": "University",
+        "target": "discovery"
+      },
+      {
+        "relation": "take",
+        "source": "signing",
+        "target": "place"
+      },
+      {
+        "relation": "mark",
+        "source": "signing",
+        "target": "point"
+      },
+      {
+        "relation": "open",
+        "source": "Sachs",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Sachs",
+        "target": "Siemens"
+      },
+      {
+        "relation": "acquire",
+        "source": "Sachs",
+        "target": "Industries"
+      },
+      {
+        "relation": "announce",
+        "source": "Modi",
+        "target": "changes"
+      },
+      {
+        "relation": "meet",
+        "source": "Modi",
+        "target": "leaders"
+      },
+      {
+        "relation": "take",
+        "source": "coronation",
+        "target": "place"
+      },
+      {
+        "relation": "mark",
+        "source": "coronation",
+        "target": "point"
+      },
+      {
+        "relation": "become",
+        "source": "Dimon",
+        "target": "CEO"
+      },
+      {
+        "relation": "publish",
+        "source": "Newton",
+        "target": "findings"
+      },
+      {
+        "relation": "announce",
+        "source": "Musk",
+        "target": "computing"
+      },
+      {
+        "relation": "lead",
+        "source": "Musk",
+        "target": "launch"
+      },
+      {
+        "relation": "announce",
+        "source": "Musk",
+        "target": "robotics"
+      },
+      {
+        "relation": "introduce",
+        "source": "FAO",
+        "target": "trial"
+      },
+      {
+        "relation": "introduce",
+        "source": "FAO",
+        "target": "study"
+      },
+      {
+        "relation": "introduce",
+        "source": "FAO",
+        "target": "adoption"
+      },
+      {
+        "relation": "feature",
+        "source": "Australia",
+        "target": "Dhoni"
+      },
+      {
+        "relation": "feature",
+        "source": "Australia",
+        "target": "Williams"
+      },
+      {
+        "relation": "feature",
+        "source": "Australia",
+        "target": "Messi"
+      },
+      {
+        "relation": "feature",
+        "source": "Australia",
+        "target": "Ronaldo"
+      },
+      {
+        "relation": "premiere",
+        "source": "Beethoven",
+        "target": "exhibition"
+      },
+      {
+        "relation": "premiere",
+        "source": "Beethoven",
+        "target": "symphony"
+      },
+      {
+        "relation": "expand",
+        "source": "USA",
+        "target": "manufacturing"
+      },
+      {
+        "relation": "adopt",
+        "source": "USA",
+        "target": "trial"
+      },
+      {
+        "relation": "announce",
+        "source": "Museum",
+        "target": "restoration"
+      },
+      {
+        "relation": "release",
+        "source": "IBM",
+        "target": "sensors"
+      },
+      {
+        "relation": "announce",
+        "source": "Academy",
+        "target": "restoration"
+      },
+      {
+        "relation": "announce",
+        "source": "Opera",
+        "target": "restoration"
+      },
+      {
+        "relation": "release",
+        "source": "OpenAI",
+        "target": "networks"
+      },
+      {
+        "relation": "release",
+        "source": "OpenAI",
+        "target": "computing"
+      },
+      {
+        "relation": "premiere",
+        "source": "Kahlo",
+        "target": "symphony"
+      },
+      {
+        "relation": "premiere",
+        "source": "Kahlo",
+        "target": "painting"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Kahlo",
+        "target": "exhibition"
+      }
+    ]
+  },
+  "demo_graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "id": "Mayer"
+      },
+      {
+        "id": "computing"
+      },
+      {
+        "id": "Apple"
+      },
+      {
+        "id": "Harris"
+      },
+      {
+        "id": "leaders"
+      },
+      {
+        "id": "Institute"
+      },
+      {
+        "id": "discovery"
+      },
+      {
+        "id": "Ronaldo"
+      },
+      {
+        "id": "Wimbledon"
+      },
+      {
+        "id": "Carver"
+      },
+      {
+        "id": "trials"
+      },
+      {
+        "id": "Obama"
+      },
+      {
+        "id": "changes"
+      },
+      {
+        "id": "Merkel"
+      },
+      {
+        "id": "CIMMYT"
+      },
+      {
+        "id": "study"
+      },
+      {
+        "id": "Vinci"
+      },
+      {
+        "id": "symphony"
+      },
+      {
+        "id": "Dhoni"
+      },
+      {
+        "id": "CERN"
+      },
+      {
+        "id": "research"
+      },
+      {
+        "id": "Tesla"
+      },
+      {
+        "id": "office"
+      },
+      {
+        "id": "Pichai"
+      },
+      {
+        "id": "CEO"
+      },
+      {
+        "id": "Ltd"
+      },
+      {
+        "id": "adoption"
+      },
+      {
+        "id": "Researchers"
+      },
+      {
+        "id": "Barcelona"
+      },
+      {
+        "id": "tournament"
+      },
+      {
+        "id": "Gogh"
+      },
+      {
+        "id": "exhibition"
+      },
+      {
+        "id": "Samsung"
+      },
+      {
+        "id": "Intel"
+      },
+      {
+        "id": "robotics"
+      },
+      {
+        "id": "NBA"
+      },
+      {
+        "id": "opener"
+      },
+      {
+        "id": "Swaminathan"
+      },
+      {
+        "id": "Nadella"
+      },
+      {
+        "id": "launch"
+      },
+      {
+        "id": "Maathai"
+      },
+      {
+        "id": "Carson"
+      },
+      {
+        "id": "expedition"
+      },
+      {
+        "id": "point"
+      },
+      {
+        "id": "Picasso"
+      },
+      {
+        "id": "painting"
+      },
+      {
+        "id": "battle"
+      },
+      {
+        "id": "place"
+      },
+      {
+        "id": "uprising"
+      },
+      {
+        "id": "UK"
+      },
+      {
+        "id": "Messi"
+      },
+      {
+        "id": "NASA"
+      },
+      {
+        "id": "Siemens"
+      },
+      {
+        "id": "Industries"
+      },
+      {
+        "id": "House"
+      },
+      {
+        "id": "restoration"
+      },
+      {
+        "id": "Spain"
+      },
+      {
+        "id": "SpaceX"
+      },
+      {
+        "id": "Peru"
+      },
+      {
+        "id": "Williams"
+      },
+      {
+        "id": "Borlaug"
+      },
+      {
+        "id": "Beyonc\u00e9"
+      },
+      {
+        "id": "Nooyi"
+      },
+      {
+        "id": "benefits"
+      },
+      {
+        "id": "match"
+      },
+      {
+        "id": "Einstein"
+      },
+      {
+        "id": "findings"
+      },
+      {
+        "id": "Google"
+      },
+      {
+        "id": "networks"
+      },
+      {
+        "id": "Lovelace"
+      },
+      {
+        "id": "Hopper"
+      },
+      {
+        "id": "Cook"
+      },
+      {
+        "id": "Kenya"
+      },
+      {
+        "id": "Goodall"
+      },
+      {
+        "id": "ICAR"
+      },
+      {
+        "id": "Lee"
+      },
+      {
+        "id": "Franklin"
+      },
+      {
+        "id": "India"
+      },
+      {
+        "id": "sensors"
+      },
+      {
+        "id": "Barra"
+      },
+      {
+        "id": "Curie"
+      },
+      {
+        "id": "University"
+      },
+      {
+        "id": "gene"
+      },
+      {
+        "id": "signing"
+      },
+      {
+        "id": "Sachs"
+      },
+      {
+        "id": "installation"
+      },
+      {
+        "id": "Modi"
+      },
+      {
+        "id": "coronation"
+      },
+      {
+        "id": "Dimon"
+      },
+      {
+        "id": "Newton"
+      },
+      {
+        "id": "Musk"
+      },
+      {
+        "id": "FAO"
+      },
+      {
+        "id": "trial"
+      },
+      {
+        "id": "manufacturing"
+      },
+      {
+        "id": "Australia"
+      },
+      {
+        "id": "Beethoven"
+      },
+      {
+        "id": "USA"
+      },
+      {
+        "id": "Museum"
+      },
+      {
+        "id": "IBM"
+      },
+      {
+        "id": "Academy"
+      },
+      {
+        "id": "opera"
+      },
+      {
+        "id": "Opera"
+      },
+      {
+        "id": "OpenAI"
+      },
+      {
+        "id": "Kahlo"
+      }
+    ],
+    "links": [
+      {
+        "relation": "announce",
+        "source": "Mayer",
+        "target": "computing"
+      },
+      {
+        "relation": "lead",
+        "source": "Mayer",
+        "target": "launch"
+      },
+      {
+        "relation": "announce",
+        "source": "Mayer",
+        "target": "robotics"
+      },
+      {
+        "relation": "release",
+        "source": "Apple",
+        "target": "computing"
+      },
+      {
+        "relation": "release",
+        "source": "Apple",
+        "target": "robotics"
+      },
+      {
+        "relation": "meet",
+        "source": "Harris",
+        "target": "leaders"
+      },
+      {
+        "relation": "announce",
+        "source": "Harris",
+        "target": "changes"
+      },
+      {
+        "relation": "announce",
+        "source": "Institute",
+        "target": "discovery"
+      },
+      {
+        "relation": "introduce",
+        "source": "Institute",
+        "target": "study"
+      },
+      {
+        "relation": "introduce",
+        "source": "Institute",
+        "target": "adoption"
+      },
+      {
+        "relation": "announce",
+        "source": "Institute",
+        "target": "research"
+      },
+      {
+        "relation": "announce",
+        "source": "Institute",
+        "target": "gene"
+      },
+      {
+        "relation": "lead",
+        "source": "Ronaldo",
+        "target": "Wimbledon"
+      },
+      {
+        "relation": "lead",
+        "source": "Ronaldo",
+        "target": "NBA"
+      },
+      {
+        "relation": "lead",
+        "source": "Ronaldo",
+        "target": "India"
+      },
+      {
+        "relation": "announce",
+        "source": "Wimbledon",
+        "target": "opener"
+      },
+      {
+        "relation": "announce",
+        "source": "Wimbledon",
+        "target": "match"
+      },
+      {
+        "relation": "announce",
+        "source": "Wimbledon",
+        "target": "tournament"
+      },
+      {
+        "relation": "lead",
+        "source": "Carver",
+        "target": "trials"
+      },
+      {
+        "relation": "announce",
+        "source": "Obama",
+        "target": "changes"
+      },
+      {
+        "relation": "meet",
+        "source": "Obama",
+        "target": "leaders"
+      },
+      {
+        "relation": "meet",
+        "source": "Merkel",
+        "target": "leaders"
+      },
+      {
+        "relation": "announce",
+        "source": "Merkel",
+        "target": "changes"
+      },
+      {
+        "relation": "introduce",
+        "source": "CIMMYT",
+        "target": "study"
+      },
+      {
+        "relation": "show",
+        "source": "study",
+        "target": "benefits"
+      },
+      {
+        "relation": "premiere",
+        "source": "Vinci",
+        "target": "symphony"
+      },
+      {
+        "relation": "premiere",
+        "source": "Vinci",
+        "target": "exhibition"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Vinci",
+        "target": "painting"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Vinci",
+        "target": "installation"
+      },
+      {
+        "relation": "lead",
+        "source": "Dhoni",
+        "target": "Wimbledon"
+      },
+      {
+        "relation": "lead",
+        "source": "Dhoni",
+        "target": "India"
+      },
+      {
+        "relation": "lead",
+        "source": "Dhoni",
+        "target": "NBA"
+      },
+      {
+        "relation": "announce",
+        "source": "CERN",
+        "target": "research"
+      },
+      {
+        "relation": "announce",
+        "source": "CERN",
+        "target": "discovery"
+      },
+      {
+        "relation": "announce",
+        "source": "CERN",
+        "target": "gene"
+      },
+      {
+        "relation": "announce",
+        "source": "CERN",
+        "target": "study"
+      },
+      {
+        "relation": "open",
+        "source": "Tesla",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Tesla",
+        "target": "Tesla"
+      },
+      {
+        "relation": "acquire",
+        "source": "Tesla",
+        "target": "Samsung"
+      },
+      {
+        "relation": "become",
+        "source": "Pichai",
+        "target": "CEO"
+      },
+      {
+        "relation": "announce",
+        "source": "Pichai",
+        "target": "computing"
+      },
+      {
+        "relation": "lead",
+        "source": "Pichai",
+        "target": "launch"
+      },
+      {
+        "relation": "introduce",
+        "source": "Ltd",
+        "target": "adoption"
+      },
+      {
+        "relation": "report",
+        "source": "Researchers",
+        "target": "discovery"
+      },
+      {
+        "relation": "report",
+        "source": "Researchers",
+        "target": "research"
+      },
+      {
+        "relation": "report",
+        "source": "Researchers",
+        "target": "study"
+      },
+      {
+        "relation": "report",
+        "source": "Researchers",
+        "target": "gene"
+      },
+      {
+        "relation": "announce",
+        "source": "Barcelona",
+        "target": "tournament"
+      },
+      {
+        "relation": "announce",
+        "source": "Barcelona",
+        "target": "match"
+      },
+      {
+        "relation": "premiere",
+        "source": "Gogh",
+        "target": "exhibition"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Gogh",
+        "target": "opera"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Gogh",
+        "target": "installation"
+      },
+      {
+        "relation": "open",
+        "source": "Samsung",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Samsung",
+        "target": "Industries"
+      },
+      {
+        "relation": "acquire",
+        "source": "Samsung",
+        "target": "Tesla"
+      },
+      {
+        "relation": "release",
+        "source": "Intel",
+        "target": "robotics"
+      },
+      {
+        "relation": "announce",
+        "source": "NBA",
+        "target": "opener"
+      },
+      {
+        "relation": "announce",
+        "source": "NBA",
+        "target": "tournament"
+      },
+      {
+        "relation": "announce",
+        "source": "NBA",
+        "target": "match"
+      },
+      {
+        "relation": "lead",
+        "source": "Swaminathan",
+        "target": "trials"
+      },
+      {
+        "relation": "lead",
+        "source": "Nadella",
+        "target": "launch"
+      },
+      {
+        "relation": "lead",
+        "source": "Maathai",
+        "target": "trials"
+      },
+      {
+        "relation": "lead",
+        "source": "Carson",
+        "target": "trials"
+      },
+      {
+        "relation": "mark",
+        "source": "expedition",
+        "target": "point"
+      },
+      {
+        "relation": "take",
+        "source": "expedition",
+        "target": "place"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Picasso",
+        "target": "painting"
+      },
+      {
+        "relation": "premiere",
+        "source": "Picasso",
+        "target": "symphony"
+      },
+      {
+        "relation": "premiere",
+        "source": "Picasso",
+        "target": "installation"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Picasso",
+        "target": "exhibition"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Picasso",
+        "target": "opera"
+      },
+      {
+        "relation": "take",
+        "source": "battle",
+        "target": "place"
+      },
+      {
+        "relation": "mark",
+        "source": "battle",
+        "target": "point"
+      },
+      {
+        "relation": "take",
+        "source": "uprising",
+        "target": "place"
+      },
+      {
+        "relation": "mark",
+        "source": "uprising",
+        "target": "point"
+      },
+      {
+        "relation": "feature",
+        "source": "UK",
+        "target": "Messi"
+      },
+      {
+        "relation": "feature",
+        "source": "UK",
+        "target": "Williams"
+      },
+      {
+        "relation": "feature",
+        "source": "UK",
+        "target": "Dhoni"
+      },
+      {
+        "relation": "lead",
+        "source": "Messi",
+        "target": "NBA"
+      },
+      {
+        "relation": "lead",
+        "source": "Messi",
+        "target": "Wimbledon"
+      },
+      {
+        "relation": "announce",
+        "source": "NASA",
+        "target": "research"
+      },
+      {
+        "relation": "announce",
+        "source": "NASA",
+        "target": "study"
+      },
+      {
+        "relation": "acquire",
+        "source": "Siemens",
+        "target": "Industries"
+      },
+      {
+        "relation": "open",
+        "source": "Siemens",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Siemens",
+        "target": "Samsung"
+      },
+      {
+        "relation": "acquire",
+        "source": "Siemens",
+        "target": "Tesla"
+      },
+      {
+        "relation": "acquire",
+        "source": "Industries",
+        "target": "Industries"
+      },
+      {
+        "relation": "acquire",
+        "source": "Industries",
+        "target": "Sachs"
+      },
+      {
+        "relation": "open",
+        "source": "Industries",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Industries",
+        "target": "Siemens"
+      },
+      {
+        "relation": "announce",
+        "source": "House",
+        "target": "restoration"
+      },
+      {
+        "relation": "feature",
+        "source": "Spain",
+        "target": "Dhoni"
+      },
+      {
+        "relation": "feature",
+        "source": "Spain",
+        "target": "Messi"
+      },
+      {
+        "relation": "feature",
+        "source": "Spain",
+        "target": "Ronaldo"
+      },
+      {
+        "relation": "feature",
+        "source": "Spain",
+        "target": "Williams"
+      },
+      {
+        "relation": "release",
+        "source": "SpaceX",
+        "target": "robotics"
+      },
+      {
+        "relation": "release",
+        "source": "SpaceX",
+        "target": "computing"
+      },
+      {
+        "relation": "adopt",
+        "source": "Peru",
+        "target": "adoption"
+      },
+      {
+        "relation": "lead",
+        "source": "Williams",
+        "target": "Wimbledon"
+      },
+      {
+        "relation": "lead",
+        "source": "Williams",
+        "target": "India"
+      },
+      {
+        "relation": "lead",
+        "source": "Borlaug",
+        "target": "trials"
+      },
+      {
+        "relation": "premiere",
+        "source": "Beyonc\u00e9",
+        "target": "exhibition"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Beyonc\u00e9",
+        "target": "symphony"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Beyonc\u00e9",
+        "target": "installation"
+      },
+      {
+        "relation": "premiere",
+        "source": "Beyonc\u00e9",
+        "target": "painting"
+      },
+      {
+        "relation": "become",
+        "source": "Nooyi",
+        "target": "CEO"
+      },
+      {
+        "relation": "publish",
+        "source": "Einstein",
+        "target": "findings"
+      },
+      {
+        "relation": "release",
+        "source": "Google",
+        "target": "networks"
+      },
+      {
+        "relation": "release",
+        "source": "Google",
+        "target": "sensors"
+      },
+      {
+        "relation": "lead",
+        "source": "Lovelace",
+        "target": "launch"
+      },
+      {
+        "relation": "announce",
+        "source": "Hopper",
+        "target": "networks"
+      },
+      {
+        "relation": "announce",
+        "source": "Hopper",
+        "target": "sensors"
+      },
+      {
+        "relation": "lead",
+        "source": "Hopper",
+        "target": "launch"
+      },
+      {
+        "relation": "become",
+        "source": "Cook",
+        "target": "CEO"
+      },
+      {
+        "relation": "adopt",
+        "source": "Kenya",
+        "target": "study"
+      },
+      {
+        "relation": "adopt",
+        "source": "Kenya",
+        "target": "adoption"
+      },
+      {
+        "relation": "adopt",
+        "source": "Kenya",
+        "target": "trial"
+      },
+      {
+        "relation": "publish",
+        "source": "Goodall",
+        "target": "findings"
+      },
+      {
+        "relation": "introduce",
+        "source": "ICAR",
+        "target": "adoption"
+      },
+      {
+        "relation": "introduce",
+        "source": "ICAR",
+        "target": "trial"
+      },
+      {
+        "relation": "announce",
+        "source": "Lee",
+        "target": "networks"
+      },
+      {
+        "relation": "lead",
+        "source": "Lee",
+        "target": "launch"
+      },
+      {
+        "relation": "publish",
+        "source": "Franklin",
+        "target": "findings"
+      },
+      {
+        "relation": "adopt",
+        "source": "India",
+        "target": "study"
+      },
+      {
+        "relation": "expand",
+        "source": "India",
+        "target": "manufacturing"
+      },
+      {
+        "relation": "announce",
+        "source": "India",
+        "target": "opener"
+      },
+      {
+        "relation": "announce",
+        "source": "India",
+        "target": "tournament"
+      },
+      {
+        "relation": "adopt",
+        "source": "India",
+        "target": "adoption"
+      },
+      {
+        "relation": "become",
+        "source": "Barra",
+        "target": "CEO"
+      },
+      {
+        "relation": "publish",
+        "source": "Curie",
+        "target": "findings"
+      },
+      {
+        "relation": "announce",
+        "source": "University",
+        "target": "gene"
+      },
+      {
+        "relation": "announce",
+        "source": "University",
+        "target": "study"
+      },
+      {
+        "relation": "announce",
+        "source": "University",
+        "target": "discovery"
+      },
+      {
+        "relation": "take",
+        "source": "signing",
+        "target": "place"
+      },
+      {
+        "relation": "mark",
+        "source": "signing",
+        "target": "point"
+      },
+      {
+        "relation": "open",
+        "source": "Sachs",
+        "target": "office"
+      },
+      {
+        "relation": "acquire",
+        "source": "Sachs",
+        "target": "Siemens"
+      },
+      {
+        "relation": "acquire",
+        "source": "Sachs",
+        "target": "Industries"
+      },
+      {
+        "relation": "announce",
+        "source": "Modi",
+        "target": "changes"
+      },
+      {
+        "relation": "meet",
+        "source": "Modi",
+        "target": "leaders"
+      },
+      {
+        "relation": "take",
+        "source": "coronation",
+        "target": "place"
+      },
+      {
+        "relation": "mark",
+        "source": "coronation",
+        "target": "point"
+      },
+      {
+        "relation": "become",
+        "source": "Dimon",
+        "target": "CEO"
+      },
+      {
+        "relation": "publish",
+        "source": "Newton",
+        "target": "findings"
+      },
+      {
+        "relation": "announce",
+        "source": "Musk",
+        "target": "computing"
+      },
+      {
+        "relation": "lead",
+        "source": "Musk",
+        "target": "launch"
+      },
+      {
+        "relation": "announce",
+        "source": "Musk",
+        "target": "robotics"
+      },
+      {
+        "relation": "introduce",
+        "source": "FAO",
+        "target": "trial"
+      },
+      {
+        "relation": "introduce",
+        "source": "FAO",
+        "target": "study"
+      },
+      {
+        "relation": "introduce",
+        "source": "FAO",
+        "target": "adoption"
+      },
+      {
+        "relation": "feature",
+        "source": "Australia",
+        "target": "Dhoni"
+      },
+      {
+        "relation": "feature",
+        "source": "Australia",
+        "target": "Williams"
+      },
+      {
+        "relation": "feature",
+        "source": "Australia",
+        "target": "Messi"
+      },
+      {
+        "relation": "feature",
+        "source": "Australia",
+        "target": "Ronaldo"
+      },
+      {
+        "relation": "premiere",
+        "source": "Beethoven",
+        "target": "exhibition"
+      },
+      {
+        "relation": "premiere",
+        "source": "Beethoven",
+        "target": "symphony"
+      },
+      {
+        "relation": "expand",
+        "source": "USA",
+        "target": "manufacturing"
+      },
+      {
+        "relation": "adopt",
+        "source": "USA",
+        "target": "trial"
+      },
+      {
+        "relation": "announce",
+        "source": "Museum",
+        "target": "restoration"
+      },
+      {
+        "relation": "release",
+        "source": "IBM",
+        "target": "sensors"
+      },
+      {
+        "relation": "announce",
+        "source": "Academy",
+        "target": "restoration"
+      },
+      {
+        "relation": "announce",
+        "source": "Opera",
+        "target": "restoration"
+      },
+      {
+        "relation": "release",
+        "source": "OpenAI",
+        "target": "networks"
+      },
+      {
+        "relation": "release",
+        "source": "OpenAI",
+        "target": "computing"
+      },
+      {
+        "relation": "premiere",
+        "source": "Kahlo",
+        "target": "symphony"
+      },
+      {
+        "relation": "premiere",
+        "source": "Kahlo",
+        "target": "painting"
+      },
+      {
+        "relation": "exhibit",
+        "source": "Kahlo",
+        "target": "exhibition"
+      }
+    ]
+  }
+}
